@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - justify-content</title>
+    <style>
+        .container{
+            max-width: 400px;
+            border: 1px solid black;
+            margin: 0;
+            display: flex;
+            margin-botton: 10px;
+
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .flex-start{
+            justify-content: flex-start;
+        }
+
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .center{
+            justify-content: center;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <p>flex-start</p>
+    <section class="container flex-start">
+      <div class="item">Primeiro item</div>
+      <div class="item">Segundo item</div>
+      <div class="item"> Outro Item</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">Primeiro item</div>
+        <div class="item">Segundo item</div>
+        <div class="item"> Outro Item</div>
+      </section>
+
+      <p>center</p>
+    <section class="container center">
+        <div class="item">Primeiro item</div>
+        <div class="item">Segundo item</div>
+        <div class="item"> Outro Item</div>
+        <div class="item">mais um</div>
+        <div class="item"> último </div>
+      </section>
+
+      <p>space-between</p>
+      <section class="container space-between">
+        <div class="item">pato</div>
+        <div class="item">pato</div>
+        <div class="item"> pato</div>
+        <div class="item">patinho feio</div>
+      </section>
+      
+      <p>space-around</p>
+      <section class="container space-around">
+        <div class="item">pato</div>
+        <div class="item">pato</div>
+        <div class="item"> pato</div>
+        <div class="item">patinho feio</div>
+      </section>
+
+      <h1>column</h1>
+
+      <section class="container flex-start column">
+        <div class="item">pato</div>
+        <div class="item">pato</div>
+        <div class="item"> pato</div>
+        <div class="item">patinho</div>
+         <img src="https://img.r7.com/images/pato-filhote-viral-24092020102916886?dimensions=460x305&&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;resize=460x305&amp;crop=750x497+0+49&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;resize=460x305&amp;crop=750x497+0+49" >
+      </section>
+
+      <p>flex-end</p>
+      <section class="container flex-end column">
+        <div class="item">pato</div>
+        <div class="item">pato</div>
+        <div class="item"> pato</div>
+        <div class="item">patinho </div>
+         </section>
+
+     <p>center</p>
+      <section class="container center column">
+        <div class="item">pato</div>
+        <div class="item">pato</div>
+        <div class="item"> pato</div>
+        <div class="item">patinho </div>
+         </section>    
+
+         <p>space-between</p>
+      <section class="container space-between column">
+        <div class="item">pato</div>
+        <div class="item">pato</div>
+        <div class="item"> pato</div>
+        <div class="item">patinho </div>
+         </section>
+     
+     
+         <p>space-around</p>
+         <section class="container space-around column">
+           <div class="item">pato</div>
+           <div class="item">pato</div>
+           <div class="item"> pato</div>
+           <div class="item">patinho </div>
+            </section>
+</body>
+</html>

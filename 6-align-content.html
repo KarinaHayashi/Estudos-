@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos align content</title>
+    <style>
+        .container{
+            height: 400px ;
+            max-width: 300px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            border: 2px solid rosybrown;
+        }
+
+        .item{
+            background-color: pink;
+            padding: 5 5px;
+            margin:5px;
+            flex: 1;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            border: 1px solid black;
+        }
+
+        .center{
+            align-content: center;
+        }
+
+        .flex-start{
+            align-content: flex-start;
+        }
+
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+
+        .space-beetwen{
+            align-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A abelha abelhuda abelhudou as abelhas.</div>
+        <div class="item"> Três pratos de trigo para três tigres tristes. </div>
+        <div class="item">Quando digo "Digo", digo "Digo", não digo "Diogo".
+        </div>
+        <div class="item">Fala, arara loura. A arara loura falará.
+        </div>
+        <div class="item">Pedro pregou um prego na porta preta.
+        </div>
+        <div class="item">Casa suja, chão sujo. Chão sujo, casa suja.
+
+        </div>
+    </div>
+
+    <p>center</p>
+    <div class="container center">
+        <div class="item">A abelha abelhuda abelhudou as abelhas.</div>
+        <div class="item"> Três pratos de trigo para três tigres tristes. </div>
+        <div class="item">Quando digo "Digo", digo "Digo", não digo "Diogo".
+        </div>
+        <div class="item">Fala, arara loura. A arara loura falará.
+        </div>
+        <div class="item">Pedro pregou um prego na porta preta.
+        </div>
+        <div class="item">Casa suja, chão sujo. Chão sujo, casa suja.
+
+        </div>
+    </div>
+
+    <p>flex-end</p>
+    <div class="container flex-end">
+        <div class="item">A abelha abelhuda abelhudou as abelhas.</div>
+        <div class="item"> Três pratos de trigo para três tigres tristes. </div>
+        <div class="item">Quando digo "Digo", digo "Digo", não digo "Diogo".
+        </div>
+        <div class="item">Fala, arara loura. A arara loura falará.
+        </div>
+        <div class="item">Pedro pregou um prego na porta preta.
+        </div>
+        <div class="item">Casa suja, chão sujo. Chão sujo, casa suja.
+            </div>
+     </div>       
+
+     <p>space-around</p>
+    <div class="container space-around">
+        <div class="item">A abelha abelhuda abelhudou as abelhas.</div>
+        <div class="item"> Três pratos de trigo para três tigres tristes. </div>
+        <div class="item">Quando digo "Digo", digo "Digo", não digo "Diogo".
+        </div>
+        <div class="item">Fala, arara loura. A arara loura falará.
+        </div>
+        <div class="item">Pedro pregou um prego na porta preta.
+        </div>
+        <div class="item">Casa suja, chão sujo. Chão sujo, casa suja.
+            </div>
+     </div>  
+
+     <p>space-between</p>
+    <div class="container space-beetwen">
+        <div class="item">A abelha abelhuda abelhudou as abelhas.</div>
+        <div class="item"> Três pratos de trigo para três tigres tristes. </div>
+        <div class="item">Quando digo "Digo", digo "Digo", não digo "Diogo".
+        </div>
+        <div class="item">Fala, arara loura. A arara loura falará.
+        </div>
+        <div class="item">Pedro pregou um prego na porta preta.
+        </div>
+        <div class="item">Casa suja, chão sujo. Chão sujo, casa suja.
+            </div>
+     </div>  
+</body>
+</html>
